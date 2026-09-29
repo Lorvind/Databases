@@ -1,3 +1,7 @@
+DROP DATABASE university_main;
+DROP DATABASE university_test;
+DROP DATABASE university_archive;
+DROP DATABASE university_distributed;
 
 -- Part 1
 
@@ -28,6 +32,7 @@ CREATE DATABASE university_distributed
     WITH
     TABLESPACE = student_data
     ENCODING = 'LATIN9';
+    SET client_encoding = 'LATIN9';
 
 
 
